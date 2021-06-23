@@ -1,12 +1,15 @@
 <div>
   <p>utilizador: {{user}}</p>
   <div>
-    <a [routerLink]="['/CreateChart']">Criar Personagem</a>
+    <a [routerLink]="['/Home/CreateChart']">Criar Personagem</a>
+    <a [routerLink]="['/Home/Treinar']">Treinar Personagem</a>
   </div>
 </div>
-<div>
-  <h1>{{chartInf.Nome}}</h1>
-  <p>Ataque: {{chartInf.Atk}}</p>
-  <p>Inteligência: {{chartInf.Int}}</p>
-  <p>Vida: {{chartInf.Vida}}</p>
+<div class="personagens">
+  <h1>{{chartInf[per].Nome}}</h1>
+  <p>Ataque: {{chartInf[per].Atk}}</p>
+  <p>Inteligência: {{chartInf[per].Int}}</p>
+  <p>Vida: {{chartInf[per].Vida}}</p>
+  <button (click)="mudarEs()"><-</button><button (click)="mudarDi()">-></button>
 </div>
+<router-outlet></router-outlet>

@@ -8,7 +8,8 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { FormsModule } from '@angular/forms';
 import { RegistoComponent } from './components/registo/registo.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
-import { CreateCharComponent } from './components/create-char/create-char.component';
+import { CreateCharComponent } from './components/home-page/Childrens/create-char/create-char.component';
+import { TreinarComponent } from './components/home-page/Childrens/treinar/treinar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CreateCharComponent } from './components/create-char/create-char.compon
     LogInComponent,
     RegistoComponent,
     HomePageComponent,
-    CreateCharComponent
+    CreateCharComponent,
+    TreinarComponent
   ],
   imports: [
     BrowserModule,

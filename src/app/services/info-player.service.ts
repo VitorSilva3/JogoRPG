@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Chart } from "../classes/chart";
 
 @Injectable({
   providedIn: 'root'
@@ -10,17 +11,8 @@ export class InfoPlayerService {
   IdPlayer: any;
   username: any;
   password: any;
+  chart: any;
 
-  jogador: any = {
-    name: "",
-    id: "",
-    atk: "0",
-    isMonset: "",
-    int: "0",
-    lp: "0",
-    img: "",
-    idPlayer: "",
-    weapon: ""
-  };
+  personagem: Array<Chart> = new Array<Chart>();
 
 }

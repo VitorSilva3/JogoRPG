@@ -25,6 +25,7 @@ export class LogInComponent implements OnInit {
         this.jogador.IdPlayer = arg['data'];
         this.jogador.username = this.name;
         this.jogador.password = this.pass;
+        this.jogador.chart = 0;
         this.router.navigate(['/Home']);
       }
       else {
