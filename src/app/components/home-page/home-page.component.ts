@@ -16,6 +16,7 @@ export class HomePageComponent implements OnInit {
   chartInf;
   per = this.jogador.chart;
   qtCharts;
+  idChart;
 
   constructor(private pedir : DungeonService, private jogador : InfoPlayerService, router : Router) { this.router = router }
 
@@ -30,7 +31,8 @@ export class HomePageComponent implements OnInit {
       console.log(this.chartInf)
       this.qtCharts = this.chartInf.length - 1;
       for (let i = 0; i < this.chartInf.length; i++) {
-        this.jogador.personagem.push(new Chart(this.chartInf[i].Nome,
+        this.jogador.personagem.push(new Chart(
+          this.chartInf[i].Nome,
           this.chartInf[i].ID,
           this.chartInf[i].Atk,
           this.chartInf[i].IsMonset,
@@ -38,10 +40,19 @@ export class HomePageComponent implements OnInit {
           this.chartInf[i].Vida,
           this.chartInf[i].Imagem,
           this.chartInf[i].ID_Player,
-          "" ));
+          this.chartInf[i].Weapon));
       }
+      console.log(this.jogador.personagem)
       }
     )
+  }
+
+  eliminar(){
+    this.idChart = this.jogador.personagem[this.per].id;
+    console.log(this.jogador.personagem[this.per].id);
+    this.pedir.deleteChar(this.idChart).subscribe(
+      arg => console.log(arg)
+    );
   }
 
   mudarEs(){

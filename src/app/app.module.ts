@@ -10,6 +10,8 @@ import { RegistoComponent } from './components/registo/registo.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { CreateCharComponent } from './components/home-page/Childrens/create-char/create-char.component';
 import { TreinarComponent } from './components/home-page/Childrens/treinar/treinar.component';
+import { CriarArmaComponent } from './components/home-page/Childrens/criar-arma/criar-arma.component';
+import { ArenaComponent } from './components/arena/arena.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TreinarComponent } from './components/home-page/Childrens/treinar/trein
     RegistoComponent,
     HomePageComponent,
     CreateCharComponent,
-    TreinarComponent
+    TreinarComponent,
+    CriarArmaComponent,
+    ArenaComponent
   ],
   imports: [
     BrowserModule,

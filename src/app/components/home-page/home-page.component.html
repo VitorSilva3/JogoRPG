@@ -3,6 +3,8 @@
   <div>
     <a [routerLink]="['/Home/CreateChart']">Criar Personagem</a>
     <a [routerLink]="['/Home/Treinar']">Treinar Personagem</a>
+    <a [routerLink]="['/Home/CriarArma']">Criar Arma</a>
+    <a [routerLink]="['/Arena']">Arena</a>
   </div>
 </div>
 <div class="personagens">
@@ -10,6 +12,7 @@
   <p>Ataque: {{chartInf[per].Atk}}</p>
   <p>Inteligência: {{chartInf[per].Int}}</p>
   <p>Vida: {{chartInf[per].Vida}}</p>
+  <button (click)="eliminar()">Eliminar</button>
   <button (click)="mudarEs()"><-</button><button (click)="mudarDi()">-></button>
 </div>
 <router-outlet></router-outlet>

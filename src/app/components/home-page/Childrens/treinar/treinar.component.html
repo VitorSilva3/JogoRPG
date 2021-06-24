@@ -1,6 +1,12 @@
 <div>
-  <h1>Personagem {{nome}}</h1>
-  <button>Ataque ({{atk}})</button>
-  <button>Inteligencia ({{int}})</button>
-  <button>Vida ({{hp}})</button>
+  <button (click)="sair()">Sair</button>
+  <div [ngStyle]="{'display': jaTrei == true ? 'Block' : 'none' }">
+
+  </div>
+  <div [ngStyle]="{'display': jaTrei == true ? 'none' : 'Block' }">
+    <h1>Personagem {{nome}}</h1>
+    <button (click)="treinar(atkk)" #atkk value="atk">Ataque ({{atk}})</button>
+    <button (click)="treinar(intt)" #intt value="int">Inteligencia ({{int}})</button>
+    <button (click)="treinar(hpp)" #hpp value="hp">Vida ({{hp}})</button>
+  </div>
 </div>
