@@ -1,16 +1,23 @@
 <button (click)="sair()">Sair</button>
+<button (click)="batalha()">Batalhar</button>
 <button (click)="armas()">Armas</button>
 <div>
   <h2>Tu</h2>
   <h1>{{chartInf.Nome}}</h1>
-  <p>Ataque: {{chartInf.Atk}}</p>
+  <p>Ataque: {{atk}}</p>
   <p>Inteligência: {{chartInf.Int}}</p>
   <p>Vida: {{chartInf.Vida}}</p>
+  <div *ngFor="let arma of armasT">
+    <p>{{arma.nome}} - Ataque {{arma.Atk}}</p>
+  </div>
 </div>
 <div>
   <h2>Enimigo</h2>
   <h1>{{chartInfI.Nome}}</h1>
-  <p>Ataque: {{chartInfI.Atk}}</p>
+  <p>Ataque: {{atkI}}</p>
   <p>Inteligência: {{chartInfI.Int}}</p>
   <p>Vida: {{chartInfI.Vida}}</p>
+  <div *ngFor="let arma of armasI">
+    <p>{{arma.nome}} - Ataque {{arma.Atk}}</p>
+  </div>
 </div>
