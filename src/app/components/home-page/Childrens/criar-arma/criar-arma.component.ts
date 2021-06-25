@@ -14,7 +14,7 @@ export class CriarArmaComponent implements OnInit {
   name;
   atk;
   durabilidade;
-  tipo = "";
+  tipo;
   vida;
   idChart = this.jogador.personagem[this.jogador.chart].id;
 
@@ -29,6 +29,10 @@ export class CriarArmaComponent implements OnInit {
       alert("Este personagem já tem arma!");
       this.router.navigate(['/Home']);
     }
+  }
+
+  sair () {
+    this.router.navigate(['/Home'])
   }
 
   criar() {

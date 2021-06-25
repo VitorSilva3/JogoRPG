@@ -1,0 +1,63 @@
+.menu {
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 2vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  text-align: center;
+}
+
+.menu a {
+  padding: 2vh;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+  margin-right: 2vh;
+  cursor: pointer;
+}
+
+.menu button {
+  display: inline-block;
+  margin: 1vh;
+  padding: 2vh;
+  margin-right: 3vh;
+  background-color: burlywood;
+}
+
+.luta {
+  display: inline-flex;
+  margin-top: 5vh;
+  width: 50vw;
+  margin-left: 24vw;
+}
+
+.centro {
+  margin: auto;
+}
+
+.luta img {
+  width: 10vw;
+}
+
+.eni {
+  margin-left: 2vh;
+  text-align: end;
+}
+
+.joga,.eni {
+  display: inline-block;
+  width: 13vw;
+}
+
+.armasT {
+  overflow-y: scroll;
+  height: 10vh;
+}
+
+.armasI {
+  overflow-y: scroll;
+  height: 10vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}

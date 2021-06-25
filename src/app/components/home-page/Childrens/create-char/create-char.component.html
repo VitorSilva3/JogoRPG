@@ -1,5 +1,8 @@
-<input type="text" placeholder="Name" [(ngModel)]="name" required>
-<input type="number" min="0" max="30" [(ngModel)]="atk">
-<input type="number" min="0" max="30" [(ngModel)]="int">
-<input type="number" min="0" max="30" [(ngModel)]="hp">
-<button (click)="criar()">Create Me</button>
+<div class="escu" (click)="sair()"></div>
+<div class="form">
+  <input type="text" placeholder="Name" [(ngModel)]="name" required>
+  <input type="number" min="0" max="30" [(ngModel)]="atk">
+  <input type="number" min="0" max="30" [(ngModel)]="int">
+  <input type="number" min="0" max="30" [(ngModel)]="hp">
+  <button (click)="criar()">Create Me</button>
+</div>

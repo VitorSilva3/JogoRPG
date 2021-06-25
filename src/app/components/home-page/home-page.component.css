@@ -1,4 +1,58 @@
-.personagens {
-  display: flex;
+.menu {
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 2vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  text-align: center;
+}
 
+.menu a {
+  padding: 2vh;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: black;
+  margin-right: 2vh;
+  cursor: pointer;
+}
+
+.menu h2 {
+  display: inline-block;
+  margin: 2vh;
+}
+
+.personagens {
+  width: 35vw;
+  margin: auto;
+  display: flex;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.personagens img {
+  width: 15vw;
+  margin-right: 3vh;
+}
+
+.informacoes {
+  display: inline-block;
+  margin-top: 5vh;
+}
+
+.informacoes button {
+  width: 10vw;
+  height: 3vh;
+  background-color: rgb(206, 206, 206);
+  color: black;
+}
+
+.botoes {
+  width: 20vw;
+  margin: auto;
+}
+
+.botoes button {
+  width: 10vw;
+  height: 3vh;
+  background-color: rgb(206, 206, 206);
+  color: black;
 }

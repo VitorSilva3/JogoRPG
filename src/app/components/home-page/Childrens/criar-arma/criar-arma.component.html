@@ -1,7 +1,9 @@
-<div>
+<div (click)="sair()" class="escu"></div>
+<div class="form">
   <input type="text" [(ngModel)]="name" placeholder="Nome" required>
   <input type="number" [(ngModel)]="atk" placeholder="Ataque" required>
   <input type="number" [(ngModel)]="durabilidade" placeholder="Durabilidade" required>
+  <input type="text" [(ngModel)]="tipo" placeholder="Tipo" required>
   <input type="number" [(ngModel)]="vida" placeholder="Vida" required>
   <button (click)="criar()">Criar</button>
 </div>

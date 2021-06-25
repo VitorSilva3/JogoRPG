@@ -1,4 +1,6 @@
-<input [(ngModel)]="name" required>
-<input [(ngModel)]="pass" required>
-<button (click)="LogIn()">LogIn</button>
-<p>Se não tens conta regista <a [routerLink]="['/registar']">aqui</a></p>
+<div class="form">
+  <input [(ngModel)]="name" type="text" placeholder="Name" required>
+  <input [(ngModel)]="pass" type="password" placeholder="Password" required>
+  <button (click)="LogIn()">LogIn</button>
+  <p>Se não tens conta regista <a [routerLink]="['/registar']">aqui</a></p>
+</div>

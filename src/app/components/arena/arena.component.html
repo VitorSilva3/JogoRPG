@@ -1,23 +1,31 @@
-<button (click)="sair()">Sair</button>
-<button (click)="batalha()">Batalhar</button>
-<button (click)="armas()">Armas</button>
-<div>
-  <h2>Tu</h2>
-  <h1>{{chartInf.Nome}}</h1>
-  <p>Ataque: {{atk}}</p>
-  <p>Inteligência: {{chartInf.Int}}</p>
-  <p>Vida: {{chartInf.Vida}}</p>
-  <div *ngFor="let arma of armasT">
-    <p>{{arma.nome}} - Ataque {{arma.Atk}}</p>
-  </div>
+<div class="menu">
+  <a (click)="sair()">Sair</a>
+  <button (click)="batalha()">Dar um Soco</button>
+  <a (click)="armas()">Armas</a>
 </div>
-<div>
-  <h2>Enimigo</h2>
-  <h1>{{chartInfI.Nome}}</h1>
-  <p>Ataque: {{atkI}}</p>
-  <p>Inteligência: {{chartInfI.Int}}</p>
-  <p>Vida: {{chartInfI.Vida}}</p>
-  <div *ngFor="let arma of armasI">
-    <p>{{arma.nome}} - Ataque {{arma.Atk}}</p>
+<div class="luta">
+  <img src="../../../assets/Images/aliado.png">
+  <div class="joga">
+    <h1>{{chartInf.Nome}}</h1>
+    <p>Ataque: {{atk}}</p>
+    <p>Inteligência: {{chartInf.Int}}</p>
+    <p>Vida: {{chartInf.Vida}}</p>
+    <div class="armasT">
+      <div *ngFor="let arma of armasT">
+        <p>{{arma.nome}} - Ataque {{arma.Atk}}</p>
+      </div>
+    </div>
   </div>
+  <div class="eni">
+    <h1>{{chartInfI.Nome}}</h1>
+    <p>Ataque: {{atkI}}</p>
+    <p>Inteligência: {{chartInfI.Int}}</p>
+    <p>Vida: {{chartInfI.Vida}}</p>
+    <div class="armasI">
+      <div *ngFor="let arma of armasI">
+        <p>{{arma.nome}} - Ataque {{arma.Atk}}</p>
+      </div>
+    </div>
+  </div>
+  <img src="../../../assets/Images/inimigo.png">
 </div>

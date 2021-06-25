@@ -19,7 +19,7 @@ export class LogInComponent implements OnInit {
   LogIn() {
     this.pedir.doLogIn(this.name, this.pass)
     .subscribe(arg => {
-      console.log(arg);
+      console.log("entrou" + arg);
       console.log(arg['data']);
       if (arg['code'] == 200) {
         this.jogador.IdPlayer = arg['data'];

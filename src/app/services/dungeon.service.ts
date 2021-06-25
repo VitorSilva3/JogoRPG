@@ -35,7 +35,7 @@ export class DungeonService {
     return this.http.post(this.linkRegis,dataToSend);
   }
 
-  criarChart(name, atk, int, vida, username, password) {
+  criarChart(name, atk, int, vida) {
     let dataToSend:FormData = new FormData();
 
     dataToSend.append('name', name);
@@ -43,8 +43,8 @@ export class DungeonService {
     dataToSend.append('isMonster', 'false');
     dataToSend.append('int', int);
     dataToSend.append('vida', vida);
-    dataToSend.append('username', username);
-    dataToSend.append('password', password);
+    dataToSend.append('username', this.infoPlayer.username);
+    dataToSend.append('password', this.infoPlayer.password);
 
     return this.http.post(this.LinkCreateChart, dataToSend);
   }

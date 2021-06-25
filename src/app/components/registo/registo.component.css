@@ -1,0 +1,28 @@
+.form {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 30vw;
+  margin: auto;
+  margin-top: 30vh;
+  border: 2px black solid;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.form input {
+  border: 0px;
+  border-bottom: 2px aliceblue solid;
+  background-color: transparent;
+  margin-bottom: 2vh;
+  width: 20vw;
+  color: white;
+}
+
+.form button {
+  display: block;
+  margin: auto;
+  background-color: rgb(38, 38, 38);
+  color: aliceblue;
+  padding: 1vh;
+}

@@ -55,14 +55,14 @@ export class ArenaComponent implements OnInit {
     this.pedir.buscarArma(this.chartInf.ID).subscribe(
       arg => {this.armasT = arg["data"].Armas;
       for (let i = 0; i < this.armasT.length; i++) {
-        this.atk = this.atk + +this.armasT[i].Atk;
+        this.atk = +this.atk + +this.armasT[i].Atk;
       }
     })
 
     this.pedir.buscarArma(this.chartInfI.ID).subscribe(
       arg => {this.armasI = arg["data"].Armas
       for (let i = 0; i < this.armasI.length; i++) {
-        this.atkI = this.atkI + +this.armasI[i].Atk;
+        this.atkI = +this.atkI + +this.armasI[i].Atk;
       }
     })
     }
@@ -111,10 +111,11 @@ export class ArenaComponent implements OnInit {
       }
     }
     else {
+      this.armasT = undefined;
+      this.armasI = undefined;
       alert ("Acabou!");
       this.ngOnInit();
     }
-
   }
 
 }

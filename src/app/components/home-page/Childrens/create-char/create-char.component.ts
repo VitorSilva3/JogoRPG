@@ -24,12 +24,16 @@ export class CreateCharComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  sair() {
+    this.router.navigate(['/Home'])
+  }
+
   criar() {
     if((this.atk + this.int + this.hp) > this.limite || (this.atk + this.int + this.hp) < 0 || (this.atk < 0 || this.int < 0 || this.hp < 0)){
       alert("Só podes distribuir 30 pontos nas caracteristicas");
     }
     else{
-      this.pedir.criarChart(this.name, this.atk, this.int, this.hp, this.jogador.username, this.jogador.password).subscribe(
+      this.pedir.criarChart(this.name, this.atk, this.int, this.hp).subscribe(
         arg => {console.log(arg)}
       )
     }

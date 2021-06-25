@@ -11,7 +11,7 @@ export class InfoPlayerService {
   IdPlayer: any;
   username: any;
   password: any;
-  chart: any;
+  chart: any = 0;
 
   personagem: Array<Chart> = new Array<Chart>();
 

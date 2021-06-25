@@ -46,6 +46,9 @@ export class HomePageComponent implements OnInit {
       }
     )
   }
+  sair() {
+    this.router.navigate(['']);
+  }
 
   eliminar(){
     this.idChart = this.jogador.personagem[this.per].id;
@@ -53,6 +56,7 @@ export class HomePageComponent implements OnInit {
     this.pedir.deleteChar(this.idChart).subscribe(
       arg => console.log(arg)
     );
+    this.ngOnInit();
   }
 
   mudarEs(){
